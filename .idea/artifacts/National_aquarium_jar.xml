@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="National aquarium:jar">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="National aquarium.jar">
+      <element id="module-output" name="National aquarium" />
+    </root>
+  </artifact>
+</component>

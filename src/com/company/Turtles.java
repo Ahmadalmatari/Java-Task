@@ -1,29 +1,32 @@
 package com.company;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Turtles {
 
-    public int id;
-    public String specie;
-    public double wight;
-    public double length;
-    public int numberOfWorkingFlippers;
-    public Date dateTimeOfSample;
-    public String location;
+    private int id;
+    private String specie;
+    private double wight;
+    private double length;
+    private int numberOfWorkingFlippers;
+    private LocalDateTime dateTimeOfSample;
+    private String location;
 
     public Turtles() {
 
     }
 
-    public Turtles(int id, String specie, double wight, double length, int numberOfWorkingFlippers, Date dateTimeOfSample, String location) {
-        this.id = id;
+    public Turtles(String specie, double wight, double length, int numberOfWorkingFlippers, LocalDateTime dateTimeOfSample, String location) {
         this.specie = specie;
         this.wight = wight;
         this.length = length;
         this.numberOfWorkingFlippers = numberOfWorkingFlippers;
         this.dateTimeOfSample = dateTimeOfSample;
         this.location = location;
+    }
+
+    public Turtles(String specie) {
+        this.specie = specie;
     }
 
     public String getSpecie() {
@@ -58,11 +61,11 @@ public class Turtles {
         this.numberOfWorkingFlippers = numberOfWorkingFlippers;
     }
 
-    public Date getDateTimeOfSample() {
+    public LocalDateTime getDateTimeOfSample() {
         return dateTimeOfSample;
     }
 
-    public void setDateTimeOfSample(Date dateTimeOfSample) {
+    public void setDateTimeOfSample(LocalDateTime dateTimeOfSample) {
         this.dateTimeOfSample = dateTimeOfSample;
     }
 
@@ -72,6 +75,14 @@ public class Turtles {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override
